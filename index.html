@@ -11,11 +11,78 @@
     <style>
       body {
         font-family: "Sono", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #8b7575;
+        margin: 0;
+      }
+      
+      .pricing-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      
+      .pricing-plan {
+        background-color:pink;
+        text-align: center;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(133, 89, 89, 0.1);
+        width: 300px;
+        margin: auto;
+      }
+      
+      .plan-title {
+        font-weight: bold;
+        font-size: 2rem;
+        margin-bottom: 15px;
+      }
+      
+      .plan-price {
+        font-size: 2.3rem;
+        font-weight: bold;
+      }
+      
+      .plan-features {
+        list-style: none;
+        padding: 5;
+        margin: 29px 0;
+        font-size: 1rem;
+      }
+      
+      .plan-features li {
+        margin: 8px 0;
+      }
+      
+      .plan-button {
+        background-color: #ff6600;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        font-size: 1rem;
+        cursor: pointer;
+        border-radius: 6px;
+        transition: 0.3s;
+      }
+      
+      .plan-button:hover {
+        background-color: #b88c6e;
+      }
+      
+      @media (min-width: 1024px) {
+        .pricing-container {
+          flex-direction: row;
+          gap: 30px;
+        }
+        
+        .pricing-plan {
+          width: 320px;
+        }
       }
 
-      /* Hint: What can you do with a media query and flexbox? */
-      @media (max-width: 1250px) {
-      }
     </style>
   </head>
 
@@ -54,3 +121,4 @@
     </div>
   </body>
 </html>
+       
